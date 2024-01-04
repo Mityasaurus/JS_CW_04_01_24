@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <style>
+      .tasks-container {
+        width: 300px;
+        margin: 0 auto;
+      }
+      .task {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+      }
+      .task-text {
+        flex-grow: 1;
+      }
+      .control_box {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+      }
+      span {
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+      }
+      .completed {
+        background-color: green;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tasks-container" id="tasks-container">
+      <!-- Завдання будуть додані сюди -->
+    </div>
+    <div class="control_box">
+      <input type="text" id="new-task" placeholder="Нове завдання" />
+      <button id="add-task">Додати</button>
+    </div>
+
+    <script src="./js/06-toDo.js" type="module"></script>
+  </body>
+</html>
